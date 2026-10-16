@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>いただきますダンジョン</title>
+<meta name="description" content="倒して、料理して、食べて、強くなる。倒した魔物を料理して食べる、iPhone向けのほのぼのローグライト。広告なし・アプリ内課金なし・オフライン。">
+<meta name="theme-color" content="#2b1a12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="いただきますダンジョン">
+<meta property="og:description" content="倒して、料理して、食べて、強くなる。iPhone向けのほのぼのローグライト。広告なし・アプリ内課金なし・オフライン。">
+<meta property="og:image" content="https://mtddzd5vw2-gif.github.io/itadakimasu/img/og.jpg">
+<meta property="og:url" content="https://mtddzd5vw2-gif.github.io/itadakimasu/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root { --bg: #2b1a12; --paper: #fff8ec; --ink: #3b2718; --dim: #7a5a43; --orange: #ff9f43; --butter: #ffd666; --soft: #fdeed6; color-scheme: light; }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+  body { margin: 0; color: var(--ink); background: var(--bg); font: 500 16px/1.8 "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif; }
+  a { color: #9a4a18; }
+  .hero { background: radial-gradient(120% 90% at 50% 20%, #ffe39a, #ffb455 55%, #ff8a3d); padding: 40px 16px 34px; text-align: center; border-bottom: 4px solid var(--ink); }
+  .hero img.icon { width: 112px; height: 112px; border-radius: 26px; border: 4px solid var(--ink); box-shadow: 0 6px 0 rgba(59,39,24,.4); }
+  .hero h1 { margin: 14px 0 4px; font-size: clamp(34px, 9vw, 54px); line-height: 1.15; color: #fff; -webkit-text-stroke: 8px var(--ink); paint-order: stroke fill; letter-spacing: .02em; }
+  .hero .catch { display: inline-block; margin-top: 10px; background: var(--ink); color: #ffe9a8; font-weight: 800; border-radius: 999px; padding: 6px 18px; }
+  .hero .meta { margin-top: 12px; font-weight: 700; }
+  .badge { display: inline-block; margin-top: 16px; background: #fff; border: 3px solid var(--ink); border-radius: 16px; padding: 10px 20px; font-weight: 800; box-shadow: 0 4px 0 rgba(59,39,24,.4); }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 12px 10px; }
+  .shots { display: flex; gap: 12px; overflow-x: auto; padding: 4px 4px 14px; scroll-snap-type: x mandatory; }
+  .shots img { width: 220px; flex: none; border-radius: 18px; border: 3px solid var(--ink); scroll-snap-align: center; background: #fff; }
+  .sheet { background: var(--paper); border-radius: 22px; padding: 24px 20px; margin-top: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.28); }
+  h2 { margin: 0 0 8px; font-size: 20px; }
+  ul { margin: 6px 0; padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  .cast { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .cast div { background: var(--soft); border-radius: 16px; padding: 10px 14px; }
+  .cast b { display: block; font-size: 17px; }
+  .pv { display: block; width: min(100%, 300px); aspect-ratio: 9 / 16; height: auto; margin: 0 auto 6px; border-radius: 22px; border: 3px solid var(--ink); background: #2b1a12; }
+  .facts { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .facts th, .facts td { padding: 7px 6px; border-bottom: 1px solid #ecdcc2; text-align: left; vertical-align: top; }
+  .facts th { white-space: nowrap; color: var(--dim); font-weight: 700; }
+  .doc { overflow-wrap: anywhere; }
+  .others { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .others a { display: block; background: var(--soft); border-radius: 16px; padding: 10px 14px; color: var(--ink); text-decoration: none; }
+  .others b { display: block; font-size: 17px; color: #9a4a18; }
+  footer { max-width: 820px; margin: 0 auto; padding: 18px 16px 40px; font-size: 13px; color: #cdb699; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  footer a { color: #f2e2c8; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="icon" src="img/icon-256.png" alt="いただきますダンジョンのアイコン">
+  <h1>いただきます<br>ダンジョン</h1>
+  <div class="catch">倒して、料理して、食べて、強くなる。</div>
+  <div class="meta">iPhone向けローグライト／広告なし・アプリ内課金なし・オフライン</div>
+  <div class="badge">App Store で近日配信</div>
+</header>
+<main>
+  <video class="pv" src="img/pv.mp4" poster="img/pv-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="ゲームの紹介動画"></video>
+  <div class="shots">
+    <img src="img/shot1.jpg" alt="魔物を料理した料理と、だれに食べさせるかを選ぶ画面">
+    <img src="img/shot2.jpg" alt="カエルの騎士たちが魔物と戦う画面">
+    <img src="img/shot3.jpg" alt="火加減をタップで決める画面">
+    <img src="img/shot4.jpg" alt="ほらあな湖のヌシ、ヌシナマズとのボス戦">
+  </div>
+  <section class="sheet">
+    <h2>どんなゲーム？</h2>
+    <p>畑が枯れて食べ物が尽きかけたポタ村から、3匹の冒険者が大きな鍋をひとつかかえて迷宮へ。食べ物？迷宮にいるじゃないか。</p>
+    <ul>
+      <li>倒した魔物は食材に。焼く・煮る・揚げる・蒸す・生、料理法で身につく力が変わります</li>
+      <li>火加減はタップで勝負。「絶妙」で止めれば効果アップ</li>
+      <li>だれに食べさせるかも作戦。おなかに入った料理が、そのままその子の強さになります</li>
+      <li>1回15分ほどのローグライト。魔物図鑑とレシピ75品を集めよう</li>
+    </ul>
+  </section>
+  <section class="sheet">
+    <h2>3匹の冒険者</h2>
+    <div class="cast">
+      <div><b>ミソ</b>クマの料理人。おたまで戦う、のんびり屋。生ものは料理人として許せない。</div>
+      <div><b>ピクル</b>カエルの騎士。武器はフォーク、盾は鍋のふた。虫と羽のある魔物が大好物。</div>
+      <div><b>ナツメ</b>ネコの魔法使い。杖は泡立て器。クールで猫舌。魚と生ものに目がない。</div>
+    </div>
+  </section>
+  <section class="sheet doc" id="facts">
+    <h2>製品情報（メディア・配信者の方へ）</h2>
+    <table class="facts">
+      <tr><th>タイトル</th><td>いただきますダンジョン</td></tr>
+      <tr><th>ジャンル</th><td>魔物を料理して食べるローグライト</td></tr>
+      <tr><th>対応機種</th><td>iPhone（iOS 15 以降・縦画面）</td></tr>
+      <tr><th>価格</th><td>買い切り 300円（広告なし・アプリ内課金なし）</td></tr>
+      <tr><th>配信</th><td>日本の App Store（日本語）・近日配信</td></tr>
+      <tr><th>ボリューム</th><td>4つの層とボス4体、魔物図鑑、レシピ75品＋伝説の一皿、5段階の「辛さ」</td></tr>
+      <tr><th>開発</th><td>サン楽（日本の個人ゲーム開発者）</td></tr>
+      <tr><th>お問い合わせ</th><td><a href="mailto:wakahisamk@gmail.com">wakahisamk@gmail.com</a></td></tr>
+    </table>
+    <p>この紹介ページの画像・アイコン・動画は、記事や配信にご自由にお使いください。実況・配信・動画は<a href="streaming.html">配信・動画のガイドライン</a>のとおり、収益化OK・連絡不要です。</p>
+  </section>
+  <section class="sheet">
+    <h2>サン楽のほかのゲーム</h2>
+    <div class="others">
+      <a href="https://apps.apple.com/jp/app/id6816935558"><b>電獣</b>言葉を札に書くと霊獣が目覚める、和風3Dサバイバーアクション。</a>
+      <a href="https://apps.apple.com/jp/app/id6817256008"><b>電柱コレクション</b>電柱の番号札を撮ると、その電柱の住人「電姫」が現れる。</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <a href="privacy.html">プライバシーポリシー</a>
+  <a href="support.html">サポート</a>
+  <a href="streaming.html">配信・動画のガイドライン</a>
+  <span>© 2026 サン楽</span>
+</footer>
+</body>
+</html>
